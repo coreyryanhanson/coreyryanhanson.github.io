@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import { Image } from "@astrojs/image/components";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="centered-svg">
+    <img src="/pages/mail_sent.svg" width="50%">
+  </div>
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold text-center">Thank you!</div>
+  </div>
+  <div class="mb-10 text-center">
+    Your message has been submitted.
+  </div>
+</BaseLayout>

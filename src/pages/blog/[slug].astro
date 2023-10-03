@@ -1,0 +1,33 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import { BlogSchema } from '../../content/config';
+import PostLayout from '../../layouts/PostLayout.astro';
+import createSlug from '../../lib/createSlug'
+
+export async function getStaticPaths() {
+    const postEntries = await getCollection('blog');
+    return postEntries.map(entry => ( { 
+        // Switch commented code in ...page and ...slug to turn off auto slug generation
+        // params: { slug: entry.slug }, props: { entry },
+        params: { slug: createSlug(entry.data.title) }, props: { entry },
+    } ));
+}
+
+interface Props {
+    entry: CollectionEntry<"blog">;
+}
+
+const { entry } = Astro.props;
+const post : BlogSchema = entry.data;
+const { Content } = await entry.render();
+---
+
+<PostLayout 
+    title={post.title} 
+    description={post.description} 
+    pubDate={post.pubDate} 
+    heroImage={post.heroImage} 
+    updatedDate={post.updatedDate} 
+    badge={post.badge}>
+    <Content/>
+</PostLayout>
