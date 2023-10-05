@@ -1,0 +1,109 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import JobElement from "../components/cv/JobElement.astro";
+import SkillElement from "../components/cv/SkillElement.astro";
+
+const allJobPosts = await Astro.glob("../content_components/resume/work_experience/[!_]*.md");
+const jobPosts = allJobPosts.map(n => ({
+  jobTitle: n.frontmatter.jobTitle,
+  employer: n.frontmatter.employer ?? null,
+  startDate: new Date(n.frontmatter.startDate),
+  endDate: new Date(n.frontmatter.endDate),
+  company: n.frontmatter.company,
+  city: n.frontmatter.city,
+  state: n.frontmatter.state ?? null,
+  country: n.frontmatter.country ?? null,
+  text: n.compiledContent()
+}));
+jobPosts.sort((a, b) => b.endDate.valueOf() - a.endDate.valueOf());
+
+import languages from '../content_components/resume/skills/languages.txt?raw';
+import pySkills from '../content_components/resume/skills/python.txt?raw';
+import genSkills from '../content_components/resume/skills/general.txt?raw';
+import creative from '../content_components/resume/skills/creative.txt?raw';
+
+const skills = [
+  { skillType: "General", skillString: genSkills },
+  { skillType: "Python", skillString: pySkills },
+  { skillType: "Creative", skillString: creative },
+  { skillType: "Languages", skillString: languages },
+];
+
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Resourceful, mission-driven machine learning engineer with a post production background. Experienced in statistical analysis, deep learning, NLP, and time series modeling with a strong interest in innovative mission driven machine learning projects and FOSS development.
+  </div>
+
+  <div class="skill-section">
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Skills</div>
+    </div>
+
+    {
+      skills.map(({skillType, skillString}) => (
+        <SkillElement
+          skillType={skillType}
+          skillString={skillString}
+        />
+      ))
+    }
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    {
+      jobPosts.map(({jobTitle, employer, startDate, endDate, company, city, state, country, text}) => (
+        <JobElement
+          jobTitle={jobTitle}
+          employer={employer}
+          startDate={startDate}
+          endDate={endDate}
+          company={company}
+          city={city}
+          state={state}
+          country={country}
+          text={text}
+        />
+      ))
+    }
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Immersive Data Science Program"
+      subtitle="Jan 2020 to May 2020 at Flatiron School, New York, NY"
+    />
+    <TimeLineElement
+      title="B.A. in Television Broadcasting with minor in Philosophy"
+      subtitle="May 2010 at University of La Verne, La Verne, CA"
+    />
+  </div>
+
+  <!--<div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+  </ul> -->
+
+</BaseLayout>

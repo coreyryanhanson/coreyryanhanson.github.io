@@ -1,0 +1,16 @@
+---
+const { skillType, skillString } = Astro.props;
+const skillArray = skillString.split("\n")
+skillArray.sort();
+---
+
+<div class="skill-block-container">
+  <div class="text-xl w-full font-bold">{skillType}</div>
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+      {
+        skillArray.map((skill) => (
+          <li>{skill}</li>
+        ))
+      }
+  </ul>
+</div>

@@ -1,0 +1,8 @@
+Stable Diffusion
+ComfyUI
+ControlNet
+Krita
+Blender
+Inkscape
+DaVinci Resolve
+Blackmagic Fusion

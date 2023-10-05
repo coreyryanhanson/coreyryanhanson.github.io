@@ -1,0 +1,18 @@
+Beautiful Soup
+GDAL
+Geopandas
+Matplotlib
+NLTK
+Numpy
+Pandas
+PyTorch
+Requests
+scikit-learn
+SciPy
+Seaborn
+Selenium
+Shapely
+SQLalchemy
+Statsmodels
+Tensorﬂow
+Word2Vec

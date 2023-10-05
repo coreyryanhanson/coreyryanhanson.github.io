@@ -1,0 +1,30 @@
+---
+import dayjs from "dayjs";
+const { jobTitle, employer, startDate, endDate, company, city, state, country, text } = Astro.props;
+import TimeLineElement from "./TimeLine.astro";
+
+const dateFormat = "MMM YYYY"
+const startString = dayjs(startDate).format(dateFormat);
+const endString = dayjs(endDate).format(dateFormat);
+
+let title = jobTitle
+if (employer !== null) {
+    title = title.concat(" at ", employer);
+}
+let subtitle = "From ".concat(startString, " to ", endString, " at ", company, ", ", city)
+if (state !== null) {
+    subtitle = subtitle.concat(", ", state);
+}
+if (country !== null) {
+    subtitle = subtitle.concat(", ", country);
+}
+const place = ""
+
+---
+
+<TimeLineElement
+    title={title}
+    subtitle={subtitle}
+>
+    <Fragment set:html={text}/>
+</TimeLineElement>
