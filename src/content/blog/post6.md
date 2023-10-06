@@ -45,7 +45,7 @@ Before I begin, in case you are wondering, the ControlNet model that I use for a
 
 _Some things are much easier to translate to a QR code than others._
 
-If you believe there is one optimal weight for a given QR code ControlNet model, you would be greatly mistaken. Some prompts have had me chasing hours upon hours of [**iterative QR error inpainting**](#9639) (only to be discarded entirely later). More rarely, it’s possible to get “lucky” and require a concept that is perfect for the prerequisite chaotic mix of contrasting elements.
+If you believe there is one optimal weight for a given QR code ControlNet model, you would be greatly mistaken. Some prompts have had me chasing hours upon hours of [**iterative QR error inpainting**](#strategy-4--target-the-errors) (only to be discarded entirely later). More rarely, it’s possible to get “lucky” and require a concept that is perfect for the prerequisite chaotic mix of contrasting elements.
 
 Take for instance the example below.
 
@@ -111,7 +111,7 @@ To help direct the diffusion model away from low-contrast choices before the ima
 
 On its own, this strategy will be far from perfect. It is practically guaranteed that the the intertwined sections will shift around at great cost to precision once all of the diffusion steps have completed to form an ordered image. But even small pushes in the right direction can be worth the trouble when enough are added together.
 
-## Strategy 4— Target the errors:
+## Strategy 4 — Target the errors:
 
 _The trade-off between creativity and scannability can be one of the most frustrating things about QR code generation._
 

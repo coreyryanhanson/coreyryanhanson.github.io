@@ -25,6 +25,10 @@
     margin-bottom: 0.25rem;
 }
 
+.skill-block-container li {
+    font-size: 0.875em;
+}
+
 .skill-section {
     margin-bottom: 2.5rem;
 }
