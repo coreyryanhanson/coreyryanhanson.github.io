@@ -4,6 +4,7 @@ description: "Love the simplicity of using Docker/Podman to store your machine l
 pubDate: "Aug 24 2020"
 heroImage: "/blog/pixel_docker_whale.gif"
 tags: ["docker","nvidia", "gpu", "cuda"]
+medium_link: "https://medium.com/swlh/tips-for-getting-cuda-capabilities-integrated-into-your-oci-docker-images-4cb25b589cd1"
 ---
 
 > Love the simplicity of using Docker/Podman to store your machine learning environments, but need help integrating it with your NVIDIA GPU?

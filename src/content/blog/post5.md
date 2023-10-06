@@ -4,6 +4,7 @@ description: "Bridging together sets of GPS coordinates without breaking your Py
 pubDate: "Sep 2 2020"
 heroImage: "/blog/globe_waypoints.webp"
 tags: ["python","geospatial", "data-science", "scikit-learn", "kd-tree", "ball-tree"]
+medium_link: "https://towardsdatascience.com/using-scikit-learns-binary-trees-to-efficiently-find-latitude-and-longitude-neighbors-909979bd929b"
 ---
 
 <figure class="blog-image">

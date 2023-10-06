@@ -6,7 +6,7 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 
 export interface Props extends BlogSchema {}
 
-const { title, description, pubDate, updatedDate, heroImage, badge, tags = [] } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, badge, tags = [], medium_link, } = Astro.props;
 dayjs.extend(localizedFormat);
 const displayDate = dayjs(pubDate).format("ll");
 import { Image } from "astro:assets";
@@ -38,7 +38,14 @@ import { Image } from "astro:assets";
           </div>
         )
       }
-      <div class="divider my-2"></div>
+      {
+        medium_link && (
+          <div class="medium-header-link my-2">
+            <a href={medium_link}>Clap or comment on my post (Medium)</a>
+          </div>
+        )
+      }
+      <div class="divider my-5"></div>
       <slot />
     </article>
   </main>

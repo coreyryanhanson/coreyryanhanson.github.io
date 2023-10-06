@@ -4,6 +4,7 @@ description: "An introduction to the world of graphical user interfaces."
 pubDate: "Jul 29 2020"
 heroImage: "/blog/desktop_os_logos.webp"
 tags: ["python","gui", "tkinter"]
+medium_link: "https://medium.com/@coreyhanson/creating-a-simple-python-gui-with-tkinter-tips-for-beginners-acf13a7d39f9"
 ---
 
 In the last blog, [I examined using ElementTree to navigate and modify XMLs](/blog/getting-started-using-pythons-elementtree-to-navigate-xml-files) and included a [working example that leveraged it to overcome shortcomings on lower end smartwatches](https://github.com/coreyryanhanson/y_u_no_swim). Now, I will using explore creating a graphical user interface using Tkinter, liberating it from dependence on the command line.

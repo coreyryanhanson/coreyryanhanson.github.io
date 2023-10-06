@@ -4,6 +4,7 @@ description: "Strategies and tools to be more effective at generating AI assiste
 pubDate: "Sep 14 2023"
 heroImage: "/portfolio/qr_medium_qr.webp"
 tags: ["stable-diffusion","comfyui", "qr-code", "controlnet", "custom-nodes", "inpainting", "generative-ai"]
+medium_link: "https://medium.com/@coreyhanson/comfyui-qr-tips-9d706cdea04b"
 ---
 
 When the [1.0 models for **Stable Diffusion XL**](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) were first dropped, the open source project [**ComfyUI**](https://github.com/comfyanonymous/ComfyUI) saw an increase in popularity as one of the first front-end interfaces to handle the new model architecture.

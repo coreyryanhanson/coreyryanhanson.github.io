@@ -17,6 +17,11 @@
     margin: 1rem;
 }
 
+.medium-header-link {
+    text-align: center;
+    font-size: 0.75em;
+}
+
 .skill-block-container {
     margin-bottom: 1rem;
     margin-left: 1rem;
