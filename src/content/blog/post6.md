@@ -3,6 +3,7 @@ title: "Take your generative QR codes to the next level with ComfyUI"
 description: "Strategies and tools to be more effective at generating AI assisted QR codes."
 pubDate: "Sep 14 2023"
 heroImage: "/portfolio/qr_medium_qr.webp"
+tags: ["stable-diffusion","comfyui", "qr-code", "controlnet", "custom-nodes", "inpainting", "generative-ai"]
 ---
 
 When the [1.0 models for **Stable Diffusion XL**](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) were first dropped, the open source project [**ComfyUI**](https://github.com/comfyanonymous/ComfyUI) saw an increase in popularity as one of the first front-end interfaces to handle the new model architecture.

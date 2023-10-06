@@ -3,6 +3,7 @@ title: "Using Scikit-learn’s Binary Trees to Efficiently Find Latitude and Lon
 description: "Bridging together sets of GPS coordinates without breaking your Python interpreter."
 pubDate: "Sep 2 2020"
 heroImage: "/blog/globe_waypoints.webp"
+tags: ["python","geospatial", "data-science", "scikit-learn", "kd-tree", "ball-tree"]
 ---
 
 <figure class="blog-image">

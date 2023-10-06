@@ -3,6 +3,7 @@ title: "Want to handle the unexpected in Python? TRY this. (EXCEPT don’t abuse
 description: "A basic introduction to exception handling in Python."
 pubDate: "Jan 21 2020"
 heroImage: "/blog/angry_code.webp"
+tags: ["python","beginner", "exception-handling", "try-statement"]
 ---
 
 Errors. To us programming beginners, they may as well be as certain as death and taxes. One tiny misstep and everything falls apart. Nor only do we have our own mistakes to deal with, things can go bust when input from external factors takes an unpredictable turn.

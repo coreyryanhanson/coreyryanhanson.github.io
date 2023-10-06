@@ -3,6 +3,7 @@ title: "Tips for Getting CUDA Capabilities Integrated Into Your OCI/Docker Image
 description: "Love the simplicity of using Docker/Podman to store your machine learning environments, but need help integrating it with your NVIDIA GPU?"
 pubDate: "Aug 24 2020"
 heroImage: "/blog/pixel_docker_whale.gif"
+tags: ["docker","nvidia", "gpu", "cuda"]
 ---
 
 > Love the simplicity of using Docker/Podman to store your machine learning environments, but need help integrating it with your NVIDIA GPU?

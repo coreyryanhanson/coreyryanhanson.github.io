@@ -3,6 +3,7 @@ title: "Getting started using Python’s ElementTree to navigate XML files"
 description: "A few tips on getting started and avoiding some under-documented sources of frustration."
 pubDate: "Mar 1 2020"
 heroImage: "/blog/sherlock_final.webp"
+tags: ["python","xml", "elementtree", "namespace"]
 ---
 
 More often than not, when you are gathering data via APIs you will be presented with the [**_JSON_**](https://www.w3schools.com/whatis/whatis_json.asp) format, a conveniently packaged nested dictionary (or list of them). But while the adoption of JSON is ubiquitous, sometimes you may have to work with the older [**_XML_**](https://www.w3schools.com/xml/xml_whatis.asp) standard.
