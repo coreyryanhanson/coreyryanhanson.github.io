@@ -8,11 +8,10 @@ city: "New York"
 state: "NY"
 ---
 
-* Created geospatial data pipeline that will be scaled to integrate publicly available GIS data from 72 countries including tiled raster satellite data, vectors from open street maps, internal hospital data from the foundation, etc. to an open source hospital statistical analysis library (Accessmod).
-* Deployed the pipeline using a cloud service and Docker images for seperate Python and R codebases.
-* Created a flask API for inter-container communication.
-* Integrated the outputs and cached intermediate files to Microsoft Azure based data lake storage through their Python API.
-* Integrated custom logging into the data lake that not only tracked errors, but also peak ram usage and per run server costs.
+* Created geospatial data pipeline scaled to integrate publicly available GIS data from 72 countries including tiled raster satellite data, vectors from open street maps, internal hospital data from the foundation, etc. to an open source hospital statistical analysis library (Accessmod).
+* Deployed the pipeline using a cloud service, Flask API and Docker images for separate Python and R codebases.
+* Automated sending the outputs and cached intermediate files to Microsoft Azure based data lake storage.
+* Integrated custom logging into the data lake that tracked errors, peak ram usage and per run server costs.
 * Found creative solutions to enrich existing datasets including a random forest regressor to impute gaps in health facility data and a workflow to sample from the Google directions API to inform better estimates of road speeds.
 * Automated a geospatial workflow to standardize all inputs to the same equal area projection and resolution with minimal loss and distortion generating custom projection strings based on a region's centroid coordinates.
 * Built custom sanity checks to measure result correlation to development and poverty indicators such as data from global health surveys and nighttime satellite illumination data.

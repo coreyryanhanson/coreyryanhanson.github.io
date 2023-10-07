@@ -1,3 +1,5 @@
+Astro
+Cloud Services
 Docker
 HTML and CSS
 Linux

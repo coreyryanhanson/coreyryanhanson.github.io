@@ -14,4 +14,4 @@ state: "NY"
 * Drafted workflows for several unsupervised techniques including K-means clustering and Latent Dirichlet Allocation.
 * Implemented a custom aggregation strategy benchmarked in an academic publication to improve vector representation of a short body of text.
 * Enhanced integrity of the data by integrating filters based on additional metrics from user data.
-Improved the data pipeline by migrating existing data to a PostgreSQ Database for improved efficiency to the workflow.
+Improved the data pipeline by migrating existing data to a PostgreSQ Database for improved efficiency.
