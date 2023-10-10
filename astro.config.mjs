@@ -6,6 +6,6 @@ import lottie from "astro-integration-lottie";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astrofy-template.netlify.app',
+  site: 'https://coreyhanson.com',
   integrations: [mdx(), sitemap(), lottie(), tailwind()]
 });
