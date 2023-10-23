@@ -4,7 +4,7 @@ GDAL
 Geopandas
 Matplotlib
 NLTK
-Numpy
+Numpyv
 Pandas
 PyTorch
 Requests
@@ -15,5 +15,4 @@ Selenium
 Shapely
 SQLalchemy
 Statsmodels
-Tensorﬂow
 Word2Vec
