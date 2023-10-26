@@ -12,7 +12,7 @@ const displayDate = dayjs(pubDate).format("ll");
 import { Image } from "astro:assets";
 ---
 
-<BaseLayout title={title} description={description} image={heroImage}>
+<BaseLayout title={title} description={description} image={heroImage} ogType="article">
   <!-- Hacky base tag solution to open blog links in new tabs.-->
   <base target="_blank">
   <main class="md:flex md:justify-center">
