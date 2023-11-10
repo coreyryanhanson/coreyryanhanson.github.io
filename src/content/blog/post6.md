@@ -2,7 +2,7 @@
 title: "Take your generative QR codes to the next level with ComfyUI"
 description: "Strategies and tools to be more effective at generating AI assisted QR codes."
 pubDate: "Sep 14 2023"
-heroImage: "/portfolio/qr_medium_qr.webp"
+heroImage: "/portfolio/qr_medium_qr.png"
 tags: ["stable-diffusion","comfyui", "qr-code", "controlnet", "custom-nodes", "inpainting", "generative-ai"]
 medium_link: "https://medium.com/@coreyhanson/comfyui-qr-tips-9d706cdea04b"
 ---
@@ -53,7 +53,7 @@ Take for instance the example below.
 
 <figure class="blog-image">
     <img
-        src="/portfolio/qr_medium_qr.webp">
+        src="/portfolio/qr_medium_qr.png">
     <figcaption>
         Strategies used: masked prompts, noisy latent composition of the finder pattern and modules, final merge with hand drawn masks applied on the latents of 3 variations with slightly different ControlNet weights.
     </figcaption>
