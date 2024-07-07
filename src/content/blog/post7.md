@@ -1,10 +1,10 @@
 ---
 title: "A Simple Way to Program an LLM Lipogram"
-description: "A 79,609 token model without the letter \"E.\""
+description: "A 79,609 token Llama 3 model without the letter \"E.\""
 pubDate: "Jun 12 2024"
 heroImage: "/blog/discarded_e.webp"
 tags: ["llama3","llm", "llama", "ai", "lipogram", "gadsby"]
-medium_link: ""
+medium_link: "https://medium.com/@coreyhanson/a-simple-way-to-program-an-llm-lipogram-83e84db41342"
 ---
 
 In the year 1939, the author [Earnest Vincent Wright](https://en.wikipedia.org/wiki/Ernest_Vincent_Wright) made his claim to fame by achieving the unthinkable. He wrote [a coherent novel of 50,000 words](https://archive.org/details/Gadsby) without once using the single most common letter in the English language, the letter "E." The creation of that [**_lipogram_**](https://en.wikipedia.org/wiki/Lipogram) occurred in an era that preceded the modern tools and resources that we take for granted. No computer, no internet, the novel was painstakingly compiled using analog means in the era of the typewriter.
