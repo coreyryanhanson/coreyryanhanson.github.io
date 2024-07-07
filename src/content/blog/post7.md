@@ -1,7 +1,7 @@
 ---
 title: "A Simple Way to Program an LLM Lipogram"
 description: "A 79,609 token Llama 3 model without the letter \"E.\""
-pubDate: "Jun 12 2024"
+pubDate: "Jul 4 2024"
 heroImage: "/blog/discarded_e.webp"
 tags: ["llama3","llm", "llama", "ai", "lipogram", "gadsby"]
 medium_link: "https://medium.com/@coreyhanson/a-simple-way-to-program-an-llm-lipogram-83e84db41342"
